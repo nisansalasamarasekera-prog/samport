@@ -19,6 +19,10 @@
     .projects{background:#eee4d8}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}.project-card{background:var(--paper);border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:var(--shadow)}.cover{height:330px;overflow:hidden;background:#ddd}.cover img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.project-card:hover .cover img{transform:scale(1.04)}.project-body{padding:24px}.project-body h3{font-size:30px;line-height:1.05;font-weight:400;margin:0 0 8px;text-transform:uppercase}.project-body p{margin:0;color:var(--muted);font-family:Arial,sans-serif}.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}.thumbs img{height:82px;width:100%;object-fit:cover;border-radius:12px;border:1px solid var(--line);cursor:pointer}
     .closing{text-align:center;background:linear-gradient(rgba(31,31,31,.52),rgba(31,31,31,.52)),url('assets/image45.jpg') center/cover no-repeat;color:white}.closing h2{font-size:clamp(42px,8vw,88px);font-weight:400;margin:0 0 12px}.closing p{font-family:Arial,sans-serif;margin:0 0 24px;letter-spacing:.1em;text-transform:uppercase}.footer{padding:28px 0;text-align:center;font-family:Arial,sans-serif;font-size:13px;color:var(--muted)}
     .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}.lightbox.open{display:flex}.lightbox img{max-height:90vh;max-width:96vw;object-fit:contain;border-radius:14px}.close{position:absolute;right:20px;top:18px;background:white;border:0;border-radius:999px;width:42px;height:42px;font-size:24px;cursor:pointer}
+    .btn.download{background:#fff;border:1px solid var(--line);color:var(--accent-dark)}
+    .cover img,.thumbs img{cursor:pointer}
+    .slideshow{position:fixed;inset:0;background:rgba(10,8,6,.94);display:none;align-items:center;justify-content:center;z-index:1000;padding:clamp(12px,3vw,34px);opacity:0;transition:opacity .28s ease}.slideshow.open{display:flex;opacity:1}.slide-stage{position:relative;width:min(1180px,100%);height:min(82vh,760px);display:flex;align-items:center;justify-content:center}.slide-stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.45);animation:zoomFade .42s ease;background:#1a1714}.slide-caption{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);color:#fff;background:rgba(0,0,0,.5);padding:9px 16px;border-radius:999px;font-family:Arial,sans-serif;font-size:13px;letter-spacing:.05em;text-align:center;backdrop-filter:blur(8px)}.slide-count{position:absolute;left:20px;top:18px;color:white;font-family:Arial,sans-serif;background:rgba(255,255,255,.14);padding:8px 12px;border-radius:999px}.slide-btn,.slide-close{position:absolute;border:0;background:rgba(255,255,255,.92);color:#211915;cursor:pointer;transition:.22s;box-shadow:0 10px 28px rgba(0,0,0,.25)}.slide-btn{top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:999px;font-size:34px;line-height:1}.slide-btn:hover,.slide-close:hover{background:white}.slide-prev{left:12px}.slide-next{right:12px}.slide-close{right:20px;top:18px;width:46px;height:46px;border-radius:999px;font-size:28px;line-height:1}@keyframes zoomFade{from{opacity:.15;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+    @media(max-width:760px){.slide-stage{height:78vh}.slide-btn{width:44px;height:44px;font-size:28px;background:rgba(255,255,255,.85)}.slide-prev{left:4px}.slide-next{right:4px}.slide-caption{bottom:8px;width:max-content;max-width:88%;font-size:12px}.slide-count{left:12px;top:14px}.slide-close{right:12px;top:14px}}
     @media(max-width:760px){.links{display:none}.hero{min-height:auto;padding:54px 0}.hero-card{padding:28px 20px}.summary{font-size:16px}.about-grid,.project-grid{grid-template-columns:1fr}.portrait img{height:auto}.cover{height:250px}.thumbs{grid-template-columns:repeat(3,1fr)}section{padding:52px 0}.project-body h3{font-size:25px}.btn{width:100%;justify-content:center}}
   </style>
 </head>
@@ -39,6 +43,8 @@
       <div class="btn-row">
         <a class="btn primary" href="tel:+393518595418" aria-label="Call Samadhi">☎ Call Me</a>
         <a class="btn secondary" href="mailto:nisansalasamarasekera@gmail.com" aria-label="Email Samadhi">✉ Email Me</a>
+        <a class="btn download" href="assets/CV%20Samadhi%20Samarasekera.pdf" download aria-label="Download CV">⬇ CV</a>
+        <a class="btn download" href="assets/PORTFOLIO%20(Samadhi%20Nisansala%20Samarasekera)_compressed.pdf" download aria-label="Download Portfolio">⬇ Portfolio</a>
       </div>
     </div>
   </header>
@@ -79,28 +85,87 @@
           <article class="project-card"><div class="cover"><img src="assets/image25.png" alt="Reception"></div><div class="project-body"><h3>Reception</h3><p>Prym Intimates Zhongshan Ltd.</p><div class="thumbs"><img src="assets/image23.jpg" alt=""><img src="assets/image24.png" alt=""><img src="assets/image25.png" alt=""><img src="assets/image29.png" alt=""></div></div></article>
           <article class="project-card"><div class="cover"><img src="assets/image32.png" alt="Reception and Design Studio Lobby"></div><div class="project-body"><h3>Reception & Design Studio Lobby</h3><p>Swisstek Aluminium Ltd</p><div class="thumbs"><img src="assets/image30.jpeg" alt=""><img src="assets/image31.png" alt=""><img src="assets/image32.png" alt=""><img src="assets/image34.jpg" alt=""></div></div></article>
           <article class="project-card"><div class="cover"><img src="assets/image37.png" alt="Craftmanship Room"></div><div class="project-body"><h3>Craftmanship Room</h3><p>MAS Intimates Slimline Pvt Ltd</p><div class="thumbs"><img src="assets/image35.jpg" alt=""><img src="assets/image36.jpg" alt=""><img src="assets/image37.png" alt=""><img src="assets/image38.png" alt=""></div></div></article>
-          <article class="project-card"><div class="cover"><img src="assets/image42.jpg" alt="Vegan Cafe"></div><div class="project-body"><h3>Vegan Cafe</h3><p>Colombo, Sri Lanka</p><div class="thumbs"><img src="assets/image39.jpg" alt=""><img src="assets/image40.jpg" alt=""><img src="assets/image42.jpg" alt=""><img src="assets/image42.jpg" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image41.jpg" alt="Vegan Cafe"></div><div class="project-body"><h3>Vegan Cafe</h3><p>Colombo, Sri Lanka</p><div class="thumbs"><img src="assets/image39.jpg" alt=""><img src="assets/image40.jpg" alt=""><img src="assets/image41.jpg" alt=""><img src="assets/image42.jpg" alt=""></div></div></article>
           <article class="project-card"><div class="cover"><img src="assets/image45.jpg" alt="Factory Canteen"></div><div class="project-body"><h3>Factory Canteen</h3><p>CBL Foods International (Pvt) Limited</p><div class="thumbs"><img src="assets/image43.jpg" alt=""><img src="assets/image44.jpg" alt=""><img src="assets/image45.jpg" alt=""><img src="assets/image46.png" alt=""></div></div></article>
         </div>
       </div>
     </section>
 
     <section class="closing">
-      <div class="wrap"><h2>Thank You</h2><p>Available for interior architecture and design projects</p><div class="btn-row"><a class="btn primary" href="tel:+393518595418">☎ Call Me</a><a class="btn secondary" href="mailto:nisansalasamarasekera@gmail.com">✉ Email Me</a></div></div>
+      <div class="wrap"><h2>Thank You</h2><p>Available for interior architecture and design projects</p><div class="btn-row"><a class="btn primary" href="tel:+393518595418">☎ Call Me</a><a class="btn secondary" href="mailto:nisansalasamarasekera@gmail.com">✉ Email Me</a><a class="btn download" href="assets/CV%20Samadhi%20Samarasekera.pdf" download>⬇ CV</a><a class="btn download" href="assets/PORTFOLIO%20(Samadhi%20Nisansala%20Samarasekera)_compressed.pdf" download>⬇ Portfolio</a></div></div>
     </section>
   </main>
 
   <footer class="footer"><div class="wrap">© <span id="year"></span> Samadhi Nisansala Samarasekera · Interior Architect</div></footer>
-  <div class="lightbox" id="lightbox"><button class="close" aria-label="Close image">×</button><img src="" alt="Project image preview"></div>
+    <div class="slideshow" id="slideshow" aria-hidden="true">
+    <button class="slide-close" type="button" aria-label="Close slideshow">×</button>
+    <button class="slide-btn slide-prev" type="button" aria-label="Previous image">‹</button>
+    <div class="slide-stage">
+      <span class="slide-count" id="slideCount">1 / 1</span>
+      <img id="slideImage" src="" alt="Project image preview">
+      <div class="slide-caption" id="slideCaption">Project image</div>
+    </div>
+    <button class="slide-btn slide-next" type="button" aria-label="Next image">›</button>
+  </div>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    const lightbox = document.getElementById('lightbox');
-    const lightImg = lightbox.querySelector('img');
-    document.querySelectorAll('.thumbs img, .cover img').forEach(img=>{
-      img.addEventListener('click',()=>{ lightImg.src = img.src; lightImg.alt = img.alt || 'Project image preview'; lightbox.classList.add('open'); });
+
+    const slideshow = document.getElementById('slideshow');
+    const slideImage = document.getElementById('slideImage');
+    const slideCaption = document.getElementById('slideCaption');
+    const slideCount = document.getElementById('slideCount');
+    const galleryImages = Array.from(document.querySelectorAll('.cover img, .thumbs img')).map((img) => ({
+      src: img.getAttribute('src'),
+      alt: img.getAttribute('alt') || img.closest('.project-card')?.querySelector('h3')?.textContent || 'Project image',
+      node: img
+    }));
+    let currentSlide = 0;
+    let touchStartX = 0;
+
+    function showSlide(index){
+      currentSlide = (index + galleryImages.length) % galleryImages.length;
+      const item = galleryImages[currentSlide];
+      slideImage.style.animation = 'none';
+      slideImage.offsetHeight;
+      slideImage.style.animation = '';
+      slideImage.src = item.src;
+      slideImage.alt = item.alt;
+      slideCaption.textContent = item.alt;
+      slideCount.textContent = `${currentSlide + 1} / ${galleryImages.length}`;
+    }
+    function openSlide(index){
+      showSlide(index);
+      slideshow.classList.add('open');
+      slideshow.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeSlide(){
+      slideshow.classList.remove('open');
+      slideshow.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+    galleryImages.forEach((item, index) => {
+      item.node.addEventListener('click', () => openSlide(index));
+      item.node.setAttribute('tabindex','0');
+      item.node.addEventListener('keydown', e => { if(e.key === 'Enter') openSlide(index); });
     });
-    lightbox.addEventListener('click',e=>{ if(e.target === lightbox || e.target.classList.contains('close')) lightbox.classList.remove('open'); });
-    document.addEventListener('keydown',e=>{ if(e.key === 'Escape') lightbox.classList.remove('open'); });
+    document.querySelector('.slide-prev').addEventListener('click', e => { e.stopPropagation(); showSlide(currentSlide - 1); });
+    document.querySelector('.slide-next').addEventListener('click', e => { e.stopPropagation(); showSlide(currentSlide + 1); });
+    document.querySelector('.slide-close').addEventListener('click', closeSlide);
+    slideshow.addEventListener('click', e => { if(e.target === slideshow) closeSlide(); });
+    slideshow.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive:true});
+    slideshow.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].screenX;
+      if(Math.abs(diff) > 45) showSlide(currentSlide + (diff > 0 ? 1 : -1));
+    }, {passive:true});
+    document.addEventListener('keydown', e => {
+      if(!slideshow.classList.contains('open')) return;
+      if(e.key === 'Escape') closeSlide();
+      if(e.key === 'ArrowRight') showSlide(currentSlide + 1);
+      if(e.key === 'ArrowLeft') showSlide(currentSlide - 1);
+    });
+
   </script>
 </body>
 </html>
