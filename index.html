@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samadhi Nisansala Samarasekera | Interior Architect Portfolio</title>
+  <meta name="description" content="Portfolio website of Samadhi Nisansala Samarasekera, Interior Architect with 5 years of experience in space planning, design, and project management." />
+  <style>
+    :root{
+      --bg:#f6f1ea; --paper:#fffaf4; --ink:#1f1f1f; --muted:#716b64; --line:#ded2c4; --accent:#9a6a45; --accent-dark:#664229; --shadow:0 18px 50px rgba(54,37,23,.14);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.65}
+    img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:50;background:rgba(246,241,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{font-family:Arial,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.22em;font-weight:700}.links{display:flex;gap:22px;font-family:Arial,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.12em}.links a{color:var(--muted)}.links a:hover{color:var(--accent-dark)}
+    .hero{min-height:88vh;display:grid;place-items:center;padding:80px 0 55px;background:linear-gradient(120deg,rgba(255,250,244,.72),rgba(246,241,234,.9)),url('assets/image32.png') center/cover no-repeat}.hero-card{width:min(960px,100%);background:rgba(255,250,244,.85);border:1px solid rgba(222,210,196,.75);box-shadow:var(--shadow);padding:clamp(34px,7vw,78px);text-align:center}.eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.28em;color:var(--accent);font-size:13px;margin:0 0 18px}.hero h1{font-size:clamp(42px,8vw,92px);line-height:.96;margin:0 0 12px;font-weight:400;letter-spacing:.03em}.hero h2{font-family:Arial,sans-serif;font-size:clamp(15px,2vw,21px);letter-spacing:.32em;text-transform:uppercase;margin:0 0 26px;color:var(--muted)}.summary{max-width:780px;margin:0 auto 30px;font-size:18px;color:#3f3933}
+    .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font-family:Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;transition:.25s}.btn.primary{background:var(--accent-dark);color:white}.btn.secondary{border:1px solid var(--accent-dark);color:var(--accent-dark);background:rgba(255,255,255,.5)}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(54,37,23,.14)}
+    section{padding:76px 0}.section-title{font-size:clamp(32px,5vw,54px);font-weight:400;margin:0 0 10px}.section-kicker{font-family:Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-size:12px;margin:0 0 36px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}.portrait{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:var(--paper)}.portrait img{width:100%;height:560px;object-fit:cover}.info-card{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:var(--shadow);margin-bottom:20px}.info-card h3{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:14px;margin:0 0 14px;color:var(--accent-dark)}.contact-list{display:grid;gap:12px;font-family:Arial,sans-serif}.contact-item{display:flex;align-items:center;gap:12px;color:var(--muted);overflow-wrap:anywhere}.icon{width:22px;height:22px;min-width:22px;color:var(--accent-dark)}.timeline{display:grid;gap:14px}.timeline-item{border-left:2px solid var(--accent);padding-left:16px}.timeline-item strong{display:block;font-family:Arial,sans-serif;color:var(--ink)}.timeline-item span{font-family:Arial,sans-serif;color:var(--muted);font-size:14px}.software-icons{max-width:260px;border:1px solid var(--line);border-radius:18px;background:white;padding:8px}
+    .projects{background:#eee4d8}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}.project-card{background:var(--paper);border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:var(--shadow)}.cover{height:330px;overflow:hidden;background:#ddd}.cover img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.project-card:hover .cover img{transform:scale(1.04)}.project-body{padding:24px}.project-body h3{font-size:30px;line-height:1.05;font-weight:400;margin:0 0 8px;text-transform:uppercase}.project-body p{margin:0;color:var(--muted);font-family:Arial,sans-serif}.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}.thumbs img{height:82px;width:100%;object-fit:cover;border-radius:12px;border:1px solid var(--line);cursor:pointer}
+    .closing{text-align:center;background:linear-gradient(rgba(31,31,31,.52),rgba(31,31,31,.52)),url('assets/image45.jpg') center/cover no-repeat;color:white}.closing h2{font-size:clamp(42px,8vw,88px);font-weight:400;margin:0 0 12px}.closing p{font-family:Arial,sans-serif;margin:0 0 24px;letter-spacing:.1em;text-transform:uppercase}.footer{padding:28px 0;text-align:center;font-family:Arial,sans-serif;font-size:13px;color:var(--muted)}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}.lightbox.open{display:flex}.lightbox img{max-height:90vh;max-width:96vw;object-fit:contain;border-radius:14px}.close{position:absolute;right:20px;top:18px;background:white;border:0;border-radius:999px;width:42px;height:42px;font-size:24px;cursor:pointer}
+    @media(max-width:760px){.links{display:none}.hero{min-height:auto;padding:54px 0}.hero-card{padding:28px 20px}.summary{font-size:16px}.about-grid,.project-grid{grid-template-columns:1fr}.portrait img{height:auto}.cover{height:250px}.thumbs{grid-template-columns:repeat(3,1fr)}section{padding:52px 0}.project-body h3{font-size:25px}.btn{width:100%;justify-content:center}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">Samadhi Portfolio</a>
+      <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-card">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Samadhi Nisansala Samarasekera</h1>
+      <h2>Interior Architect</h2>
+      <p class="summary">Interior Architect with 5 years of experience in freelance and in-office work, specializing in space planning, design, and project management. Executed and contributed to the design of over 30 projects across the commercial, residential, institutional, and hotel sectors, ensuring client satisfaction and implementing innovative design solutions.</p>
+      <div class="btn-row">
+        <a class="btn primary" href="tel:+393518595418" aria-label="Call Samadhi">☎ Call Me</a>
+        <a class="btn secondary" href="mailto:nisansalasamarasekera@gmail.com" aria-label="Email Samadhi">✉ Email Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <p class="section-kicker">Personal Information · Education · Experience</p>
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="portrait"><img src="assets/image6.jpg" alt="Portrait of Samadhi Nisansala Samarasekera"></div>
+          <div>
+            <div class="info-card" id="contact">
+              <h3>Contact</h3>
+              <div class="contact-list">
+                <a class="contact-item" href="tel:+393518595418"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L8 9.69a16 16 0 0 0 6.31 6.31l1.25-1.25a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z"/></svg>+39 351 859 5418</a>
+                <a class="contact-item" href="mailto:nisansalasamarasekera@gmail.com"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>nisansalasamarasekera@gmail.com</a>
+                <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Via Giacomo Matteotti 09, 20051 Cassina De' Pecchi, Italy</div>
+                <a class="contact-item" href="https://www.linkedin.com/in/samadhi-samarasekera-4430032b3" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14M8.34 17.34V10.7H6.13v6.64h2.21m-1.1-7.55c.77 0 1.24-.51 1.24-1.15-.01-.65-.47-1.15-1.22-1.15s-1.24.5-1.24 1.15c0 .64.47 1.15 1.21 1.15h.01m10.73 7.55v-3.8c0-2.04-1.09-2.99-2.55-2.99-1.17 0-1.7.65-1.99 1.1V10.7h-2.21c.03.62 0 6.64 0 6.64h2.21v-3.71c0-.2.01-.4.07-.54.16-.4.52-.81 1.13-.81.8 0 1.12.61 1.12 1.5v3.56h2.21Z"/></svg>LinkedIn Profile</a>
+              </div>
+            </div>
+            <div class="info-card"><h3>Education</h3><div class="timeline"><div class="timeline-item"><strong>BA in Interior Architecture</strong><span>Limkokwing University of Creative Technology with President's Award · October 2016 – December 2019</span></div></div></div>
+            <div class="info-card"><h3>Experience</h3><div class="timeline"><div class="timeline-item"><strong>Freelance Interior Designer</strong><span>January 2023 – January 2026</span></div><div class="timeline-item"><strong>Interior Designer · Studio ViVeGe</strong><span>March 2020 – December 2022</span></div></div></div>
+            <div class="info-card"><h3>Software Skills</h3><img class="software-icons" src="assets/image1.jpg" alt="Design software icons"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="wrap">
+        <p class="section-kicker">Selected Interior Projects</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+          <article class="project-card"><div class="cover"><img src="assets/image9.png" alt="Product Display Area"></div><div class="project-body"><h3>Product Display Area</h3><p>DPL Sport Glove Complex, Sri Lanka</p><div class="thumbs"><img src="assets/image9.png" alt=""><img src="assets/image10.png" alt=""><img src="assets/image11.png" alt=""><img src="assets/image12.png" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image15.png" alt="Fabric Library"></div><div class="project-body"><h3>Fabric Library</h3><p>Teejay India Private Ltd, India</p><div class="thumbs"><img src="assets/image15.png" alt=""><img src="assets/image16.png" alt=""><img src="assets/image17.png" alt=""><img src="assets/image14.jpg" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image19.jpg" alt="Showroom"></div><div class="project-body"><h3>Showroom</h3><p>Satlo Lanka Pvt Ltd, Sri Lanka</p><div class="thumbs"><img src="assets/image19.jpg" alt=""><img src="assets/image20.jpg" alt=""><img src="assets/image21.jpg" alt=""><img src="assets/image22.png" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image25.png" alt="Reception"></div><div class="project-body"><h3>Reception</h3><p>Prym Intimates Zhongshan Ltd.</p><div class="thumbs"><img src="assets/image23.jpg" alt=""><img src="assets/image24.png" alt=""><img src="assets/image25.png" alt=""><img src="assets/image29.png" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image32.png" alt="Reception and Design Studio Lobby"></div><div class="project-body"><h3>Reception & Design Studio Lobby</h3><p>Swisstek Aluminium Ltd</p><div class="thumbs"><img src="assets/image30.jpeg" alt=""><img src="assets/image31.png" alt=""><img src="assets/image32.png" alt=""><img src="assets/image34.jpg" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image37.png" alt="Craftmanship Room"></div><div class="project-body"><h3>Craftmanship Room</h3><p>MAS Intimates Slimline Pvt Ltd</p><div class="thumbs"><img src="assets/image35.jpg" alt=""><img src="assets/image36.jpg" alt=""><img src="assets/image37.png" alt=""><img src="assets/image38.png" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image42.jpg" alt="Vegan Cafe"></div><div class="project-body"><h3>Vegan Cafe</h3><p>Colombo, Sri Lanka</p><div class="thumbs"><img src="assets/image39.jpg" alt=""><img src="assets/image40.jpg" alt=""><img src="assets/image42.jpg" alt=""><img src="assets/image42.jpg" alt=""></div></div></article>
+          <article class="project-card"><div class="cover"><img src="assets/image45.jpg" alt="Factory Canteen"></div><div class="project-body"><h3>Factory Canteen</h3><p>CBL Foods International (Pvt) Limited</p><div class="thumbs"><img src="assets/image43.jpg" alt=""><img src="assets/image44.jpg" alt=""><img src="assets/image45.jpg" alt=""><img src="assets/image46.png" alt=""></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap"><h2>Thank You</h2><p>Available for interior architecture and design projects</p><div class="btn-row"><a class="btn primary" href="tel:+393518595418">☎ Call Me</a><a class="btn secondary" href="mailto:nisansalasamarasekera@gmail.com">✉ Email Me</a></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">© <span id="year"></span> Samadhi Nisansala Samarasekera · Interior Architect</div></footer>
+  <div class="lightbox" id="lightbox"><button class="close" aria-label="Close image">×</button><img src="" alt="Project image preview"></div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const lightbox = document.getElementById('lightbox');
+    const lightImg = lightbox.querySelector('img');
+    document.querySelectorAll('.thumbs img, .cover img').forEach(img=>{
+      img.addEventListener('click',()=>{ lightImg.src = img.src; lightImg.alt = img.alt || 'Project image preview'; lightbox.classList.add('open'); });
+    });
+    lightbox.addEventListener('click',e=>{ if(e.target === lightbox || e.target.classList.contains('close')) lightbox.classList.remove('open'); });
+    document.addEventListener('keydown',e=>{ if(e.key === 'Escape') lightbox.classList.remove('open'); });
+  </script>
+</body>
+</html>
